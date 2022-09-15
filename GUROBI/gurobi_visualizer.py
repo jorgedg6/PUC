@@ -13,9 +13,6 @@ for var in m.getVars():
     f.write(str(var) + "     " + str(var.getAttr("X")) + "\n")
     nvariables += 1
 f.close()
-print("------------------")
-print(f"Numero de Variables: {nvariables}")
-print("------------------")
 
 #Variables con valor
 f = open("variables_valor.txt","w")
@@ -23,6 +20,10 @@ for var in m.getVars():
     if var.getAttr("X"):
         f.write(str(var) + "     " + str(var.getAttr("X")) + "\n")
 f.close()
+
+print("------------------")
+print(f"Numero de Variables: {nvariables}")
+print("------------------")
 
 #Archivo con valores de holgura Restricciones
 nrestricciones = 0
